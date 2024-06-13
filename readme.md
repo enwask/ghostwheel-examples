@@ -30,6 +30,6 @@ More speficially, ghostwheel only implements Ollama's primary completion endpoin
 
 ### Available LLMs
 
-[The ghostwheel API docs](https://ese-timewarp.ese.ic.ac.uk) contain an up-to-date list of valid identifiers for LLMs you can call through ghostwheel. The docs are regenerated with any change to the backend application, so this list is kept current when any new models are deployed. In addition to the Ollama calls mentioned above, we also provide a `api/list_models` endpoint, should you want to programatically determine which LLMs are available to you.
+[The ghostwheel API docs](https://ese-timewarp.ese.ic.ac.uk) contain an up-to-date list of valid identifiers for LLMs you can call through ghostwheel. (Again, note this domain is only accessible from the internal network). The docs are regenerated with any change to the backend application, so this list is kept current when any new models are deployed. In addition to the Ollama calls mentioned above, we also provide a `api/list_models` endpoint, should you want to programatically determine which LLMs are available to you.
 
 For more information describing parameters for the completion endpoints and response specifications, [check out the Ollama API docs on GitHub](https://github.com/ollama/ollama/blob/main/docs/api.md).
