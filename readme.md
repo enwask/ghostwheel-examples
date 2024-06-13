@@ -4,7 +4,7 @@ Ghostwheel is an internal inference server for limited use (if you were linked t
 
 ## About ghostwheel
 
-Ghostwheel is implemented as an API layer on top of Ollama, exposing multiple local LLMs running on dedicated GPUs. The ghostwheel API is intended as a replacement for Ollama in projects that already use it as a backend, though some implementations may require modification to include our authorization header in outgoing requests (see [the API docs linked below](#the-ghostwheel-api) for usage of the authentication header).
+Ghostwheel is implemented as an API layer on top of Ollama, exposing multiple local LLMs running on dedicated GPUs. The ghostwheel API is intended as a replacement for Ollama within projects or libraries that can use it as a backend (e.g. Langchain), though some implementations may require modification to send our authorization header with outgoing requests. See [the API docs linked below](#the-ghostwheel-api) for how to authenticate with this header.
 
 You can use ghostwheel in a few ways, and examples of some of these methods are demonstrated in the [demo notebook](demo.ipynb):
 - Directly as a REST API from your favorite client tech (demonstrated in the notebook with Python's `requests` module)
